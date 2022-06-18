@@ -61,7 +61,6 @@ const newJointResult = [{ ...jointResult,
 console.log(newJointResult)
 
 
-//We use the reduce function to perform certain function like addition, substraction e.t.c
 const addNumber = (...numbers: number[]) => {
     return numbers.reduce((item, index) => {
         return item + index
