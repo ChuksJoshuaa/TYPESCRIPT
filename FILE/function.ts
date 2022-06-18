@@ -4,9 +4,6 @@ function add(n1: number, n2: number) {
     return n1 + n2
 }
 
-
-// When using undefined make sure you return the function or it will not work. You can use : void and there will be no need for the return function
-
 function printResult(word: number): void {
     console.log("Result:" + " " + word)
 
