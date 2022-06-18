@@ -8,7 +8,7 @@ userInput = "Max"
 if (typeof userInput === "string") {
     userName = userInput
 }
-// We can use Never in function cases like this 
+
 function generateError(message: string, code: number): never {
     throw {message: message, statusCode: code}
 }
