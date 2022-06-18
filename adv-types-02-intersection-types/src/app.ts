@@ -172,7 +172,7 @@ buttEl.addEventListener("click", function () {
 })
 
 //INDEX PROPERTIES
-//We use the index type prop to add many stuff and setting to whatever we like
+
 interface ErrorContainer {
     [prop: string]: string
 }
@@ -224,5 +224,5 @@ const userValue = ""
 const storedData = userInput ?? "DEFAULT"
 const storedValue = userValue ?? "DEFAULT"
 console.log(storedData)
-//Note an empty value will be logged in the console
+
 console.log(storedValue)
