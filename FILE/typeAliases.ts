@@ -1,6 +1,3 @@
-// Note we use this style to write lesser code and ensure there is no error and also make sure when using type the next word should be a random
-// name, do not use something that is similar to typescript and javascript
-
 
 type Combinable = number | string
 type ConversionDescription = "as-test" | "as-string"
