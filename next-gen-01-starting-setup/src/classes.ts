@@ -1,6 +1,4 @@
 
-// Protected is the same as private but in this case, it is only available to any class that extends from the initial class
-//With private, you can only access it in the initial class
 abstract class Department {
 
     static fiscalYear = 2000
@@ -45,7 +43,6 @@ abstract class Department {
     }
 }
 
-// We only use super when working with a class that extends from another class
 class ITDepartment extends Department {
     admins: string[]
     constructor(id: string, admins: string[]) {
@@ -58,8 +55,7 @@ class ITDepartment extends Department {
     }
 }
 
-// When the string or number that is passed in the constructor is above the constructor, it is set defaulty
-// to public but we can set the one inside the constructor to private as shown below
+
 class AccountingDepartment extends Department {
     private lastReport: string;
 
@@ -127,7 +123,6 @@ class AccountingDepartment extends Department {
 const accountant = new ITDepartment("D1", ["Joshua", "Vivian", "Tolu"])
 
 
-//enables us to use methods of a class without instantiating an object first. Static is called when you do not want to access new Stuff for instance, in the previous case we were using new ITDepartment before 
 const employee = Department.createEmployee("John")
 
 console.log(Department.myPeople("John"))
@@ -154,5 +149,3 @@ accounting.printReports()
 accounting.getReports()
 accounting.addEmployee("Max")
 console.log(accounting)
-
-//Singleton Method
