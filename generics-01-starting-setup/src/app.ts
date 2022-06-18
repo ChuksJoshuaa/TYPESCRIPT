@@ -1,6 +1,5 @@
 //GENERIC FUNCTIONS
 
-//T means any type but it must be different from the U type
 function merge<T, U>(objA: T, objB: U){
     return Object.assign(objA, objB)
 } 
@@ -12,7 +11,6 @@ console.log(record)
 
 //TYPE CONSTRIANTS
 
-//This means we can only pass in object, but if i extends string. it means i must pass in string value in that side
 function join<T extends object, U extends object>(objA: T, objB: U){
     return Object.assign(objA, objB)
 } 
@@ -45,7 +43,6 @@ function extractAndConvert<T extends object, U extends keyof T>(obj: T, key: U){
 }
 
 
-//name is the object while Max is the keyof object name
 const ext = extractAndConvert({ name: "Max" }, "name")
 console.log(ext)
 
