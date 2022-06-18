@@ -52,10 +52,5 @@ class Person implements Greatable {
 let user1: Greatable
 
 user1 = new Person("Max", 45)
-//When we use readonly we can not set append it after it has been called initially like 
-//in this case user1.name = Nkiru can not work if i set the name to readonly
-// user1.name = "Nkiru"
 user1.greet("Hi there my name is")
 console.log(user1)
-
-//Note Interface is a typescript function and it is not known in vanilla javascript. Also it will compile the interface to class in the js file
